@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- ml1592Protein.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en' class="html2">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        ml1592Protein.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css" >
+</head>
+<body class="body4">
+	<h1>
+		Use diseaserelatedprotein Database
+		<br></br>
+		<input Type="button" value="Go Back to Report Search Index" onclick="window.location.href='ml1592Index.html'">
+	</h1>
+	<hr>
+
+	<form id="form1" action="" method="get">
+
+	<p>Get alternative names of the protein of interest by entering the UniProtKB accession number:
+	<input type="text" placeholder="Enter UniProtKB ID" name="UniProtKB_Entry">
+	(Example: O14746)
+	</p>
+	
+	<input type="submit" name="submit1" class="submit" value="Get data" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption style="font-size:22pt">
+			<b>The alternative names of the protein O14746</b>
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniProtKB_Entry </th>
+			<th> Protein_Name </th>
+			<th> URL_UniproKB_Entry </th>
+			<th> Protein_Alternative_Names </th>
+		</tr>
+		<tr>
+			<td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> <a href="http://www.uniprot.org/uniprot/O14746" target="_blank"><b>http://www.uniprot.org/uniprot/O14746</b></td>
+			<td> Telomerase catalytic subunit;Telomerase reverse transcriptase;Telomerase-associated protein 2 </td>
+		</tr>
+
+	</table>
+</body>
+</html>

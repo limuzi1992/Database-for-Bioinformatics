@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- ml1592ProteinDiseasenumber.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en' class="html2">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        ml1592ProteinDiseasenumber.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css" >
+</head>
+<body class="body4">
+	<h1>
+		Use diseaserelatedprotein Database
+		<br></br>
+	    <input Type="button" value="Go Back to Report Search Index" onclick="window.location.href='ml1592Index.html'">
+	</h1>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p> Get a list of proteins involoved in the selected number of diseases: </p>
+	<select style="margin-left:280px" name="diseasenumber">
+	  <option value="" selected disabled>Select a number</option> 
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	</select>
+	<br>
+	<input type="submit" name="submit2" class="submit" value="Go" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption style="font-size:22pt">
+			<b>The protiens that are involved in 3 diseases</b>
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniProKB_Entry </th>
+			<th> Protein_Name </th>
+			<th> Phenotype_MIM </th>
+			<th> URL_MIM </th>
+			<th> UniPro_Disease_Full_Name </th>
+			<th> UniPro_Disease_Short_Name </th>
+			<th> DOID </th>
+		</tr>
+		
+		<tr>
+			<td> P07911 </td>
+			<td> Uromodulin </td>
+			<td> 162000 </td>
+			<td> <a href="http://omim.org/entry/162000" target="_blank"><b>http://omim.org/entry/162000</b> </td>
+			<td> Familial juvenile hyperuricemic nephropathy 1 </td>
+			<td> HNFJ1 </td>
+			<td> 0060062 </td>
+		</tr>
+		
+		<tr>
+			<td> P07911 </td>
+			<td> Uromodulin </td>
+			<td> 603860 </td>
+			<td> <a href="http://omim.org/entry/603860" target="_blank"><b>http://omim.org/entry/603860</b> </td>
+			<td> Medullary cystic kidney disease 2 </td>
+			<td> MCKD2 </td>
+			<td> none </td>
+		</tr>
+		
+		<tr>
+			<td> P07911 </td>
+			<td> Uromodulin </td>
+			<td> 609886 </td>
+			<td> <a href="http://omim.org/entry/609886" target="_blank"><b>http://omim.org/entry/609886</b> </td>
+			<td> Glomerulocystic kidney disease with hyperuricemia and isosthenuria </td>
+			<td> GCKDHI </td>
+			<td> none </td>
+		</tr>
+		
+		<tr>
+			<td> P35680 </td>
+			<td> Hepatocyte nuclear factor 1-beta </td>
+			<td> 125853 </td>
+			<td> <a href="http://omim.org/entry/125853" target="_blank"><b>http://omim.org/entry/125853</b> </td>
+			<td> Diabetes mellitus, non-insulin-dependent </td>
+			<td> NIDDM </td>
+			<td> 9352 </td>
+		</tr>
+		
+		<tr>
+			<td> P35680 </td>
+			<td> Hepatocyte nuclear factor 1-beta </td>
+			<td> 137920 </td>
+			<td> <a href="http://omim.org/entry/137920" target="_blank"><b>http://omim.org/entry/137920</b> </td>
+			<td> Renal cysts and diabetes syndrome </td>
+			<td> RCAD </td>
+			<td> 0050524 </td>
+		</tr>
+		
+		<tr>
+			<td> P35680 </td>
+			<td> Hepatocyte nuclear factor 1-beta </td>
+			<td> 611955 </td>
+			<td> <a href="http://omim.org/entry/611955" target="_blank"><b>http://omim.org/entry/611955</b> </td>
+			<td> Prostate cancer, hereditary, 11 </td>
+			<td> HPC11 </td>
+			<td> 10283 </td>
+		</tr>
+	</table>
+</body>
+</html>

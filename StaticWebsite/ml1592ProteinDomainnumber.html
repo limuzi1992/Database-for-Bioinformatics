@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- ml1592ProteinDomainnumber.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en' class="html2">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        ml1592ProteinDomainnumber.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css" >
+</head>
+<body class="body4">
+	<h1>
+		Use diseaserelatedprotein Database
+		<br></br>
+	    <input Type="button" value="Go Back to Report Search Index" onclick="window.location.href='ml1592Index.html'">
+	</h1>
+	<hr>
+
+	<form id="form2" action="" method="post">
+	<p> Get a list of proteins containing the selected number of domains: </p>
+	<select style="margin-left:280px" name="domainnumber">
+	  <option value="" selected disabled>Select a number</option> 
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="6">6</option>
+	  <option value="11">11</option>
+	  <option value="14">14</option>
+	  <option value="18">18</option>
+	  <option value="25">25</option>
+	</select>
+	<br>
+	<input type="submit" name="submit2" class="submit" value="Go" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption style="font-size:22pt">
+			<b>The proteins that contain 3 domains</b>
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniProKB_Entry </th>
+			<th> Protein_Name </th>
+			<th> URL_UniproKB_Entry </th>
+			<th> Domain_Position </th>
+			<th> Domain_Description </th>
+
+		</tr>
+		<tr>
+			<td> P31749 </td>
+			<td> RAC-alpha serine/threonine-protein kinase </td>
+			<td> <a href="http://www.uniprot.org/uniprot/P31749" target="_blank"><b>http://www.uniprot.org/uniprot/P31749</b> </td>
+			<td> 150-408 </td>
+			<td> Ptotein kinase </td>
+		</tr>
+		
+		<tr>
+			<td> P31749 </td>
+			<td> RAC-alpha serine/threonine-protein kinase </td>
+			<td> <a href="http://www.uniprot.org/uniprot/P31749" target="_blank"><b>http://www.uniprot.org/uniprot/P31749</b> </td>
+			<td> 409-480 </td>
+			<td> AGC-kinase C-terminal </td>
+		</tr>
+		
+        <tr>
+			<td> P31749 </td>
+			<td> RAC-alpha serine/threonine-protein kinase </td>
+			<td> <a href="http://www.uniprot.org/uniprot/P31749" target="_blank"><b>http://www.uniprot.org/uniprot/P31749</b> </td>
+			<td> 5-108 </td>
+			<td> PH </td>
+		</tr>
+	
+	</table>
+</body>
+</html>

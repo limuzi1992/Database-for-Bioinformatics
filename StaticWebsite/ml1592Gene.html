@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- ml1592Gene.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en' class="html2">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        ml1592Gene.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css" >
+</head>
+<body class="body4">
+	<h1>
+		Use diseaserelatedprotein Database
+		<br></br>
+	    <input Type="button" value="Go Back to Report Search Index" onclick="window.location.href='ml1592Index.html'">
+	</h1>
+	<hr>
+
+	<form id="form2" action="" method="get">
+	
+	<p> Get the gene encoding the protein of interest:
+	<input type="text" placeholder="Enter UniProtKB ID" name="UniProtKB_Entry">
+	(Example: O14746)
+	</p>
+	
+	<input type="submit" name="submit1" class="submit" value="Get data" />
+	</form>
+	<hr>
+	<br>
+	
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption style="font-size:22pt">
+			<b>The gene encoding the protein O14746</b>
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniProtKB_Entry </th>
+			<th> Protein_Name </th>
+			<th> HGNC_ID </th>
+			<th> URL_HGNC_ID </th>
+			<th> Gene_Approved_Symbol </th>
+			<th> Gene_Approved_Name </th>
+			<th> Gene_Synonyms </th>
+		</tr>
+		<tr>
+			<td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> 11730 </td>
+			<td> <a href="http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=11730" target="_blank"><b>http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=11730</b></td>
+			<td> TRET </td>
+			<td> telomerase reverse transcriptase </td>
+			<td> EST2;hEST2;TCS1;TP2;TRT
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- ml1592Disease.html 
+This is a comment. Comments are not displayed in the browser
+-->
+
+<html lang='en' class="html2">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        ml1592Disease.html
+    </title>
+    <link rel="stylesheet" type="text/css" HREF="StyleSheets.css" >
+</head>
+<body class="body4">
+	<h1>
+		Use diseaserelatedprotein Database
+		<br></br>
+		<input Type="button" value="Go Back to Report Search Index" onclick="window.location.href='ml1592Index.html'">
+	</h1>
+	<hr>
+
+	<form id="form1" action="" method="get">
+
+	<p>Get the diseases in which the protein of interest is involved by entering the UniProtKB accession number:
+	<input type="text" placeholder="Enter UniProtKB ID" name="UniProtKB_Entry">
+	(Example: O14746)
+	</p>
+	
+	<input type="submit" name="submit1" class="submit" value="Get data" />
+	</form>
+	<hr>
+	<br>
+	<!--/* the class name is case sensitive.*/ -->
+	<table class="table2">
+	<!--table-->
+		<caption style="font-size:22pt">
+			<b>The diseases that the protein O14746 is involved in</b>
+		</caption>
+		<!-- make the first row a column header row-->
+		<tr>
+			<th> UniProtKB_Entry </th>
+			<th> Protein_Name </th>
+			<th> Phenotype_MIM </th>
+			<th> URL_MIM </TH>
+			<th> Unipro_Disease_Short_Name </th>
+			<th> UniPro_Disease_Full_Name </th>
+			<th> DOID </th>
+			<th> Disease_Definition </th>
+		</tr>
+		<tr>
+			<td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> 609135 </td>
+			<td> <a href="http://omim.org/entry/609135" target="_blank"><b>http://omim.org/entry/609135</b> </td>
+			<td> AA </td>
+			<td> Aplastic anemia </td>
+			<td> 12449 </td>
+			<td> An anemia that is characterized by a deficiency of red blood cells, white blood cells and platelets produced by bone marrow. </td>
+		</tr>
+		<tr>
+		    <td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> 613989 </td>
+			<td> <a href="http://omim.org/entry/613989" target="_blank"><b>http://omim.org/entry/613989</b> </td>
+			<td> DKCA2 </td>
+			<td> Dyskeratosis congenita, autosomal dominant, 2 </td>
+			<td> 2729 </td>
+			<td> A skin disease characterized by cutaneous pigmentation, premature graying, dystrophy of the nails, leukoplakia of the oral mucosa, continuous 
+			    lacrimation due to atresia of the lacrimal ducts, often thrombocytopenia, anemia, testicular atrophy in the male carriers and predisposition to cancer.</td>
+		</tr>	
+		<tr>
+		    <td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> 613989 </td>
+			<td> <a href="http://omim.org/entry/613989" target="_blank"><b>http://omim.org/entry/613989</b> </td>
+			<td> DKCA4 </td>
+			<td> Dyskeratosis congenita, autosomal dominant, 4 </td>
+			<td> 2729 </td>
+			<td> A skin disease characterized by cutaneous pigmentation, premature graying, dystrophy of the nails, leukoplakia of the oral mucosa, continuous 
+			    lacrimation due to atresia of the lacrimal ducts, often thrombocytopenia, anemia, testicular atrophy in the male carriers and predisposition to cancer.</td>
+		</tr>
+		<tr>
+			<td> O14746 </td>
+			<td> Telomerase reverse transcriptase </td>
+			<td> 614742 </td>
+			<td> <a href="http://omim.org/entry/614742" target="_blank"><b>http://omim.org/entry/614742</b> </td>
+			<td> PFBMFT1 </td>
+			<td> Pulmonary fibrosis, and/or bone marrow failure, telomere-related, 1 </td>
+			<td> none </td>
+			<td> none </td>
+		</tr>
+
+	</table>
+</body>
+</html>
