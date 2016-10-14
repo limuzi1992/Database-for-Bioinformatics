@@ -1,1 +1,1 @@
-This folder stores the images for website.
+This folder stores the images for the website.
