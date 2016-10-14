@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- WebsiteHowToDeploy.php 
+This is a comment. Comments are not displayed in the browser.
+To run it as a php file:
+http://localhost/BCHB697/ml1592/WebsiteHowToDeploy.php
+-->
+
+<html class="html2">
+<head>
+    <title>
+        WebsiteHowToDeploy.php
+    </title>
+	<link rel="stylesheet" type="text/css" HREF="StyleSheets.css">
+</head>
+<body class="body3">
+<h1>
+    Instructions to deploy my web application
+	<br></br>
+	<br>
+</h1>
+<hr>
+<ol>
+	<li> <b>Restore the ml1592_diseaserelatedprotein database using phpMyAdmin</b>
+	<ul> 
+	<li><p>Lauch XAMPP control panel</p></li>
+	<li><p>Start Apache server</p></li>
+	<li><p>Start MariaDB server</p></li>
+	<li><p>Click on Config and select php.ini</p></li>
+	<img src="images/xampp_config.png" style="margin:5px 0px 5px 70px">
+	<li><p>Change the configuration file php.ini to increase the import size</p></li>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp post_max_size = 200M</p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp upload_max_filesize = 100M</p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp memory_limit = 100M</p>
+	<li><p>Restart Apache and MySQL</p></li>
+	<li><p>Click on Admin to launch phpMyAdmin</p></li>
+	<img src="images/xampp_admin.png" style="margin:5px 0px 5px 70px">
+	<li><p>Click on Import in phpMyAdmin</p></li>
+	<img src="images/phpmyadmin_import.png" style="margin:5px 0px 5px 70px">
+	<li><p>Upload the ml1592_diseaserelatedprotein database backup file, click <a href="ml1592_diseaserelatedprotein.sql" target="_blank"><b>here</b></a> to download the backup file.</p></li>
+	<li><p>Click on Go to run the script</p></li>
+	</ul>
+	</li>
+	
+	<li> <b>Install the website files</b>
+	<ul>
+	<li><p>Keep the website files in the folder below:</p></li>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp C:\xampp\htdocs\BCHB697\ml1592</p>
+	</ul>
+	</li>
+	
+	<li><b>Connect to the ml1592_diseaserelatedprotein database</b>
+	<ul>
+	<li><p>Click on User accounts</p></li>
+	<img src="images/phpmyadmin_useraccount.png" style="margin:5px 0px 5px 70px">
+	<li><p>Click on Add user account to create a new account</p></li>
+	<img src="images/addaccount.png" style="margin:5px 0px 5px 70px">
+	<li><p>Enter the login informatin below and check all global privileges:</p></li>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp User name: limuzi</p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp Host name: localhost</p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp Password: root697</p>
+	<img src="images/logininformation.png" style="margin:5px 0px 5px 70px">
+	<li><p>Test the connection</p></li>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp Type in the URL below to a browser and you should see an empty page with no error</p>
+	<p>&nbsp &nbsp &nbsp &nbsp &nbsp <a href="http://localhost/BCHB697/ml1592/ml1592DbConnection.php" target="_blank"><b>http://localhost/BCHB697/ml1592/ml1592DbConnection.php</b></p>
+	</li>
+
+</ol>
+<br>
+<br>
+</body>
+</html>
